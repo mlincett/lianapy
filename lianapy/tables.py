@@ -11,7 +11,7 @@ class TableMiner:
     def mine(self, root):
         output = {}
         for feature in self.features:
-            name, table, column = feature
+            table, column, name = feature
             output[name] = root[table].col(column)
         return output
     
