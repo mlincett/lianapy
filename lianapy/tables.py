@@ -1,5 +1,12 @@
 import pandas as pd
 
+def print_dict(D, n=0):
+    ''' Print dictionary as a table exploiting pandas '''
+    df = pd.DataFrame(D)
+    print(df[n:].to_string(index=False))
+
+''' HDF5 utilities '''
+
 class TableMiner:
     '''
     Class to mine data from HDF5 data sets.
