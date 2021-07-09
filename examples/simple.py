@@ -15,9 +15,9 @@ def main():
     from docopt import docopt
     args = docopt(__doc__)
 
-    input_filename = args['INPUT_FILE']
-    max_iterations = int(args['NUMBER'])
-    dry_run        = args['--dry']
+    input_filename = args.get('INPUT_FILE')
+    max_iterations = int(args.get('NUMBER'))
+    dry_run        = args.get('--dry')
     
     print(f'Mock script to process {input_filename} with {max_iterations} iterations')
 
