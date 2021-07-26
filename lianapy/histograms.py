@@ -17,6 +17,9 @@ def hist_discrete(data, template = None):
         template = hist_discrete_template_builder(sample)
     return np.histogram(data, **template)
     
+def draw_hist_discrete(ax, H, b):
+    ax.bar(bins[:-1], H, width=1)
+    
 def hist_discrete_draw(ax, data):
     return ax.hist(data, **hist_discrete_template_builder(data))
 
