@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "lianapy"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Massimiliano Lincetto <m.lincetto@gmail.com>"]
 readme = "README.md"
 packages = [{include = "lianapy", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 pydantic = "^2.6.3"
 pydantic-settings = "^2.2.1"
 
