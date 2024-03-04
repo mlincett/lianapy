@@ -31,10 +31,10 @@ jobs:
           poetry install
 
       - name: Run ruff
-        run: poetry run ruff lianapy
+        run: poetry run ruff check
 
       - name: Run mypy
-        run: poetry run mypy
+        run: poetry run mypy .
 
       - name: Run pylint
         run: poetry run pylint lianapy
