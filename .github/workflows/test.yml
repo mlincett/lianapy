@@ -8,7 +8,7 @@ on:
 
 jobs:
   linting:
-    name: Linting
+    name: Linting and testing
     runs-on: ubuntu-latest
 
     strategy:
@@ -38,3 +38,6 @@ jobs:
 
       - name: Run pylint
         run: poetry run pylint lianapy
+
+      - name: Run pytest
+        run: poetry run pytest
