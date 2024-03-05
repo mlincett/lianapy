@@ -1,0 +1,13 @@
+[MESSAGES CONTROL]
+disable=
+    # Until line-length is not enforced care of by formatters, we ignore this warning.
+    line-too-long,
+    # This is somewhat tautological.
+    missing-class-docstring,
+    missing-module-docstring,
+    missing-function-docstring,
+    # f-strings are more readable
+    # using interpolation is worth if there are many debug statements
+    logging-fstring-interpolation,
+    # Classes tend to grow with time.
+    too-few-public-methods,
