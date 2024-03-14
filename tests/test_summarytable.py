@@ -1,13 +1,15 @@
-from lianapy.misc.summary_table import SummaryTable
+from lianapy.misc.summarytable import SummaryTable
 
 
 def test_summarytable():
     summary = SummaryTable()
 
-    for i in range(10):
+    n = 10
+
+    for i in range(n):
         summary.record("i", i)
         summary.record("i^2", i**2)
 
     df = summary.to_pandas()
 
-    assert df.shape == (10, 2)
+    assert df.shape == (n, 2)
